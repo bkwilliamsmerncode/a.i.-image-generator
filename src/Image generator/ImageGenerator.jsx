@@ -1,11 +1,9 @@
 import React, { useState, useRef } from "react";
 import Default from "../Assets/Default.jpg";
 import "./ImageGenerator.css";
-import OpenAI from "openai";
 
-// const openai = new OpenAI({
-//     apiKey: "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", dangerouslyAllowBrowser: true
-//   });
+
+
 
 const ImageGenerator = () => {
 
