@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Default from "../Assets/Default.jpg";
 import "./ImageGenerator.css";
-// import OpenAI from "openai";
+import OpenAI from "openai";
 
 // const openai = new OpenAI({
 //     apiKey: "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", dangerouslyAllowBrowser: true
@@ -25,7 +25,7 @@ const ImageGenerator = () => {
         headers: {
             "Content-Type":"application/json",
             Authorization:
-            "Bearer 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",
+           process.env.REACT_APP_OPENAIAPI_KEY,
             "User-Agent":"Firefox",
         },
         body:JSON.stringify({
